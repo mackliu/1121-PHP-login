@@ -43,8 +43,26 @@ input[type='submit']:hover {
 </head>
 
 <body>
+<?php
+session_start();
+if(isset($_SESSION['login'])){
+
+    echo "登入成功!";
+    echo "歡迎，";
+    echo $_SESSION['login'];
+    echo "<a href='logout.php'>登出</a>";
+
+}else{
+?>
     <form action="check.php" method="post">
         <div>
+            <div style='color:red'>
+            <?php
+            if(isset($_SESSION['error'])){
+                echo "帳號或密碼錯誤!";
+            }
+            ?>
+            </div>
             <div class='input'>
                 <label for="">帳號:</label>
                 <input type="text" name="acc" id="acc">
@@ -58,6 +76,10 @@ input[type='submit']:hover {
             </div>
         </div>
     </form>
+<?php
+}
+
+?>
 </body>
 
 </html>
