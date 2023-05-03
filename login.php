@@ -46,8 +46,6 @@ input[type='submit']:hover {
 <?php
 session_start();
 if(isset($_SESSION['login'])){
-
-    echo "登入成功!";
     echo "歡迎，";
     echo $_SESSION['login'];
     echo "<a href='logout.php'>登出</a>";
