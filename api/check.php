@@ -14,7 +14,7 @@ if($_POST['acc']==$acc && $_POST['pw']==$pw){
         unset($_SESSION['error']);
     }
 
-    header("location:../front/member_center.php");
+    header("location:../index.php?here=member");
     
 }else{
     //echo "帳號或密碼錯誤";
@@ -23,7 +23,7 @@ if($_POST['acc']==$acc && $_POST['pw']==$pw){
         unset($_SESSION['login']);
     }
 
-    header("location:../front/login.php");
+    header("location:../index.php");
     
 }
 

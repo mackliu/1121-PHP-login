@@ -8,4 +8,4 @@ unset($_SESSION['name']); */
 unset($_SESSION['error']);
 unset($_SESSION['login']);
 
-header("location:../front/login.php");
+header("location:../index.php");
