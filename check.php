@@ -1,5 +1,7 @@
 <?php
-session_start();
+
+include_once('comm.php');
+
 
 $acc='admin';
 $pw='1234';
