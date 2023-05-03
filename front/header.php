@@ -3,7 +3,7 @@
         <?php
             if(isset($_SESSION['login'])){
                 echo "歡迎，".$_SESSION['login'];
-                echo "<a href='logout.php'> 登出</a>";
+                echo "<a href='../common/logout.php'> 登出</a>";
             }
         ?>
     </div>

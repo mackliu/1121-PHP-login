@@ -1,5 +1,5 @@
 <?php 
-include_once('comm.php');
+include_once('../common/comm.php');
 $here='front';
 ?>
 <!DOCTYPE html>
@@ -10,7 +10,7 @@ $here='front';
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>會員登入</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
     <style>
 form > div {
     border: 1px solid lightgreen;
@@ -56,11 +56,11 @@ input[type='submit']:hover {
 if(isset($_SESSION['login'])){
     echo "歡迎，";
     echo $_SESSION['login'];
-    echo "<a href='logout.php'>登出</a>";
+    echo "<a href='../common/logout.php'>登出</a>";
 
 }else{
 ?>
-    <form action="check.php" method="post">
+    <form action="../api/check.php" method="post">
         <div>
             <div style='color:red'>
             <?php
