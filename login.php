@@ -1,5 +1,6 @@
 <?php 
 include_once('comm.php');
+$here='front';
 ?>
 <!DOCTYPE html>
 <html lang="en">

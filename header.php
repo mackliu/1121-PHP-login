@@ -12,6 +12,18 @@
             <li><a href='login.php'>首頁</a></li>
             <li>產品</li>
             <li>關於我們</li>
+            <li>
+                <?php
+                switch($here){
+                    case "front":
+                        include "guest.php";
+                    break;
+                    case "member":
+                        include "vip.php";
+                    break;
+                }
+                ?>
+            </li>
         </ul>
     </div>
     <div>
