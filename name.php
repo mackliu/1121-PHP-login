@@ -1,6 +1,7 @@
 <?php
 
+//echo $_COOKIE['name'];
+session_start();
 
-echo $_COOKIE['name'];
-
+echo $_SESSION['name'];
 ?>
